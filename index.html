@@ -3,23 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wahid | Freelance Web Developer</title>
+<title>Muhamad Wahid | Freelance Web Developer</title>
 
 <style>
-body{
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
     font-family:Arial, sans-serif;
     background:#0f172a;
     color:white;
-    text-align:center;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#111827;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+nav h3{
+    font-size:18px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:14px;
 }
 
 section{
-    padding:60px 20px;
+    padding:100px 20px;
+    text-align:center;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
 }
 
 h1{
-    font-size:40px;
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+h2{
+    font-size:32px;
+    margin-bottom:40px;
+}
+
+p{
+    line-height:1.6;
 }
 
 .btn{
@@ -29,40 +73,100 @@ h1{
     color:white;
     text-decoration:none;
     border-radius:8px;
-    margin-top:20px;
+    margin-top:25px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#2563eb;
+    transform:scale(1.05);
+}
+
+.grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
 }
 
 .card{
     background:#1e293b;
-    padding:20px;
-    margin:15px;
-    border-radius:10px;
+    padding:25px;
+    border-radius:12px;
+    width:300px;
+    transition:0.4s;
+    opacity:0;
+    transform:translateY(30px);
+}
+
+.card.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#273449;
+}
+
+.highlight{
+    background:#3b82f6;
 }
 
 footer{
-    background:#1e293b;
-    padding:20px;
+    background:#111827;
+    padding:30px;
+    text-align:center;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    nav{
+        flex-direction:column;
+    }
+    h1{font-size:32px;}
+    h2{font-size:26px;}
 }
 </style>
-
 </head>
+
 <body>
 
+<!-- NAVBAR -->
+<nav>
+    <h3>Muhamad Wahid</h3>
+    <div>
+        <a href="#layanan">Layanan</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#harga">Harga</a>
+        <a href="https://wa.me/6287847053105" target="_blank">WhatsApp</a>
+    </div>
+</nav>
+
+<!-- HERO -->
 <section>
-<h1>Halo, Saya Wahid 👋</h1>
-<p>Freelance Landing Page & Website Modern</p>
+<div class="container">
+<h1>Freelance Landing Page & Website Modern</h1>
+<p>Saya membantu bisnis tampil profesional dan meningkatkan penjualan melalui website modern dan responsif.</p>
 <a class="btn" href="https://wa.me/6287847053105" target="_blank">
-  Hubungi Saya
+Konsultasi Gratis
 </a>
+</div>
 </section>
 
+<!-- TENTANG -->
 <section>
+<div class="container">
 <h2>Tentang Saya</h2>
-<p>Saya membantu UMKM dan bisnis kecil membuat website modern, cepat dan profesional agar lebih dipercaya pelanggan.</p>
+<p>Saya adalah freelance web developer yang fokus membuat landing page cepat, modern dan siap pakai untuk UMKM dan bisnis lokal.</p>
+</div>
 </section>
 
-<section>
-<h2>Layanan Saya</h2>
+<!-- LAYANAN -->
+<section id="layanan">
+<div class="container">
+<h2>Layanan</h2>
+<div class="grid">
 
 <div class="card">
 <h3>Landing Page</h3>
@@ -71,34 +175,117 @@ footer{
 
 <div class="card">
 <h3>Website UMKM</h3>
-<p>Website lengkap dengan menu, kontak dan galeri.</p>
+<p>Website lengkap dengan galeri, kontak dan WhatsApp.</p>
 </div>
 
 <div class="card">
 <h3>Maintenance</h3>
-<p>Perawatan dan update website bulanan.</p>
+<p>Update dan perawatan website bulanan.</p>
 </div>
 
+</div>
+</div>
 </section>
 
-<section>
+<!-- PORTFOLIO -->
+<section id="portfolio">
+<div class="container">
 <h2>Portfolio</h2>
+<div class="grid">
 
 <div class="card">
 <h3>Website Cafe Modern</h3>
-<p>Landing page untuk bisnis cafe dengan desain elegan.</p>
+<p>Desain elegan untuk cafe & restoran.</p>
 </div>
 
 <div class="card">
 <h3>Website Dimsum</h3>
-<p>Website promosi makanan dengan fitur WhatsApp order.</p>
+<p>Website promosi makanan dengan order WhatsApp.</p>
 </div>
 
+<div class="card">
+<h3>Website Service AC</h3>
+<p>Website jasa dengan fitur booking cepat.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- HARGA -->
+<section id="harga">
+<div class="container">
+<h2>Paket Harga</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Basic - 300rb</h3>
+<p>1 Halaman</p>
+<p>Desain Modern</p>
+<p>1x Revisi</p>
+</div>
+
+<div class="card highlight">
+<h3>Pro - 600rb</h3>
+<p>3 Halaman</p>
+<p>SEO Dasar</p>
+<p>3x Revisi</p>
+<p>Free Domain 1 Tahun</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- TESTIMONI -->
+<section>
+<div class="container">
+<h2>Testimoni</h2>
+<div class="grid">
+
+<div class="card">
+<p>⭐⭐⭐⭐⭐</p>
+<p>"Website cepat dan profesional. Penjualan meningkat!"</p>
+<strong>- Owner Cafe</strong>
+</div>
+
+<div class="card">
+<p>⭐⭐⭐⭐⭐</p>
+<p>"Hasil memuaskan dan proses cepat."</p>
+<strong>- UMKM Snack</strong>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section>
+<div class="container">
+<h2>Siap Punya Website Profesional?</h2>
+<a class="btn" href="https://wa.me/6287847053105" target="_blank">
+Hubungi Sekarang
+</a>
+</div>
 </section>
 
 <footer>
-<p>© 2026 Wahid Portfolio</p>
+<p>© <span id="year"></span> Muhamad Wahid | Freelance Web Developer</p>
 </footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const cards = document.querySelectorAll('.card');
+window.addEventListener('scroll', ()=>{
+    cards.forEach(card=>{
+        const rect = card.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 100){
+            card.classList.add('show');
+        }
+    });
+});
+</script>
 
 </body>
 </html>
