@@ -1,1 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhamad Wahid | Landing Page Specialist</title>
 
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:linear-gradient(135deg,#0f172a,#111827);
+color:white;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(17,24,39,0.9);
+backdrop-filter:blur(8px);
+padding:15px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+nav h3{
+font-size:18px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:14px;
+}
+
+section{
+padding:110px 20px;
+text-align:center;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+}
+
+h1{
+font-size:44px;
+margin-bottom:20px;
+}
+
+h2{
+font-size:32px;
+margin-bottom:40px;
+}
+
+p{
+line-height:1.6;
+opacity:0.9;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#3b82f6;
+color:white;
+text-decoration:none;
+border-radius:8px;
+margin-top:30px;
+transition:0.3s;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#2563eb;
+transform:scale(1.05);
+}
+
+.badge{
+display:inline-block;
+background:#1e293b;
+padding:8px 15px;
+border-radius:20px;
+margin:5px;
+font-size:12px;
+}
+
+.grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+width:300px;
+transition:0.4s;
+opacity:0;
+transform:translateY(40px);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.card.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#273449;
+}
+
+.highlight{
+background:#3b82f6;
+}
+
+.stats{
+display:flex;
+justify-content:center;
+gap:50px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+.stat h3{
+font-size:30px;
+}
+
+footer{
+background:#111827;
+padding:40px;
+text-align:center;
+}
+
+@media(max-width:768px){
+h1{font-size:32px;}
+h2{font-size:26px;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h3>Muhamad Wahid</h3>
+<div>
+<a href="#layanan">Layanan</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#harga">Harga</a>
+<a href="https://wa.me/6287847053105" target="_blank">WhatsApp</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section>
+<div class="container">
+<h1>Website Modern yang Meningkatkan Penjualan 🚀</h1>
+<p>Saya membantu bisnis tampil profesional dan dipercaya melalui landing page cepat & elegan.</p>
+
+<div>
+<span class="badge">Responsive</span>
+<span class="badge">SEO Friendly</span>
+<span class="badge">Fast Loading</span>
+</div>
+
+<a class="btn" href="https://wa.me/6287847053105" target="_blank">
+Konsultasi Gratis Sekarang
+</a>
+
+<div class="stats">
+<div class="stat">
+<h3>10+</h3>
+<p>Project Demo</p>
+</div>
+<div class="stat">
+<h3>100%</h3>
+<p>Mobile Friendly</p>
+</div>
+<div class="stat">
+<h3>Fast</h3>
+<p>Loading Speed</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- LAYANAN -->
+<section id="layanan">
+<div class="container">
+<h2>Layanan</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Landing Page</h3>
+<p>1 halaman profesional untuk promosi produk/jasa.</p>
+</div>
+
+<div class="card">
+<h3>Website UMKM</h3>
+<p>Website lengkap dengan galeri dan WhatsApp order.</p>
+</div>
+
+<div class="card">
+<h3>Maintenance</h3>
+<p>Update dan perawatan website bulanan.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+<div class="container">
+<h2>Portfolio</h2>
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555992336-03a23c6b6f37" alt="">
+<h3>Website Cafe</h3>
+<p>Desain elegan untuk restoran & cafe modern.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="">
+<h3>Website Dimsum</h3>
+<p>Website promosi makanan dengan order WhatsApp.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581091012184-7f3c3c8baf37" alt="">
+<h3>Website Jasa</h3>
+<p>Landing page jasa dengan fitur booking cepat.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- HARGA -->
+<section id="harga">
+<div class="container">
+<h2>Paket Harga</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Basic - 300rb</h3>
+<p>1 Halaman</p>
+<p>Desain Modern</p>
+<p>1x Revisi</p>
+</div>
+
+<div class="card highlight">
+<h3>Pro - 600rb</h3>
+<p>3 Halaman</p>
+<p>SEO Dasar</p>
+<p>3x Revisi</p>
+<p>Free Domain 1 Tahun</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section>
+<div class="container">
+<h2>Siap Punya Website Profesional?</h2>
+<p>Mulai tingkatkan bisnis Anda sekarang juga.</p>
+<a class="btn" href="https://wa.me/6287847053105" target="_blank">
+Hubungi Saya Sekarang
+</a>
+</div>
+</section>
+
+<footer>
+<p>© <span id="year"></span> Muhamad Wahid | Landing Page Specialist</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const cards = document.querySelectorAll('.card');
+window.addEventListener('scroll', ()=>{
+cards.forEach(card=>{
+const rect = card.getBoundingClientRect();
+if(rect.top < window.innerHeight - 100){
+card.classList.add('show');
+}
+});
+});
+</script>
+
+</body>
+</html>
