@@ -3,195 +3,74 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Muhamad Wahid | Web Developer</title>
+<title>Muhamad Wahid | Jasa Website Profesional</title>
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  scroll-behavior:smooth;
-}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
+body{font-family:'Segoe UI',sans-serif;background:#0f172a;color:#fff;}
 
-body{
-  font-family:'Segoe UI',sans-serif;
-  background:#0f172a;
-  color:#fff;
-}
-
-/* NAVBAR */
 nav{
-  position:fixed;
-  width:100%;
-  top:0;
-  background:rgba(0,0,0,0.6);
-  backdrop-filter:blur(10px);
-  padding:15px 40px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  z-index:1000;
+position:fixed;width:100%;top:0;
+background:rgba(0,0,0,0.6);
+padding:15px 40px;
+display:flex;justify-content:space-between;
+z-index:1000;
 }
 
-nav a{
-  color:#fff;
-  text-decoration:none;
-  margin-left:20px;
-  font-size:14px;
-  transition:0.3s;
-}
+nav a{color:#fff;text-decoration:none;margin-left:20px;font-size:14px;}
+nav a:hover{color:#38bdf8;}
 
-nav a:hover{
-  color:#38bdf8;
-}
-
-/* HERO */
 .hero{
-  height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction:column;
-  text-align:center;
-  padding:20px;
-  background:linear-gradient(135deg,#1e3a8a,#0f172a);
+height:100vh;display:flex;
+justify-content:center;align-items:center;
+flex-direction:column;text-align:center;
+background:linear-gradient(135deg,#1e3a8a,#0f172a);
+padding:20px;
 }
 
-.hero h1{
-  font-size:45px;
-  margin-bottom:15px;
-}
+.hero h1{font-size:45px;margin-bottom:15px;}
+.hero span{color:#38bdf8;}
 
-.hero span{
-  color:#38bdf8;
-}
-
-.hero p{
-  max-width:600px;
-  margin-bottom:30px;
-  opacity:0.8;
-}
-
-/* BUTTON */
 .btn{
-  display:inline-block;
-  padding:12px 25px;
-  background:#38bdf8;
-  border:none;
-  border-radius:8px;
-  color:#000;
-  font-weight:bold;
-  text-decoration:none;
-  transition:0.3s;
+padding:12px 25px;background:#38bdf8;
+border:none;border-radius:8px;
+color:#000;font-weight:bold;
+text-decoration:none;display:inline-block;
+margin-top:15px;
+transition:0.3s;
 }
 
-.btn:hover{
-  transform:scale(1.05);
-}
+.btn:hover{transform:scale(1.05);}
 
-/* SECTION */
-section{
-  padding:100px 20px;
-  text-align:center;
-}
+section{padding:100px 20px;text-align:center;}
 
-.section-title{
-  font-size:30px;
-  margin-bottom:15px;
-}
-
-.section-sub{
-  opacity:0.7;
-  margin-bottom:50px;
-}
-
-/* GRID */
 .grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:30px;
-  max-width:1100px;
-  margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;max-width:1100px;margin:auto;
 }
 
 .card{
-  background:#1e293b;
-  padding:30px;
-  border-radius:15px;
-  transition:0.4s;
-  border:1px solid rgba(255,255,255,0.1);
+background:#1e293b;padding:30px;
+border-radius:15px;
+transition:0.3s;
 }
 
-.card:hover{
-  transform:translateY(-10px);
-  box-shadow:0 20px 40px rgba(0,0,0,0.4);
-}
+.card:hover{transform:translateY(-10px);}
 
-.price{
-  font-size:28px;
-  margin:20px 0;
-  color:#38bdf8;
-}
+footer{background:#000;text-align:center;padding:25px;font-size:14px;}
 
-.recommended{
-  border:2px solid #38bdf8;
-  position:relative;
-}
-
-.badge{
-  position:absolute;
-  top:-12px;
-  left:50%;
-  transform:translateX(-50%);
-  background:#38bdf8;
-  color:#000;
-  padding:5px 15px;
-  border-radius:20px;
-  font-size:12px;
-  font-weight:bold;
-}
-
-ul{
-  list-style:none;
-  text-align:left;
-  margin-bottom:20px;
-}
-
-ul li{
-  margin-bottom:10px;
-}
-
-/* TESTIMONI */
-.testimoni{
-  background:#111827;
-}
-
-/* FOOTER */
-footer{
-  background:#000;
-  text-align:center;
-  padding:25px;
-  font-size:14px;
-  opacity:0.7;
-}
-
-/* FLOAT BUTTON */
 .wa-float{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#38bdf8;
-  color:#000;
-  padding:14px 22px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:bold;
-  box-shadow:0 10px 25px rgba(0,0,0,0.4);
-  transition:0.3s;
-}
-
-.wa-float:hover{
-  transform:scale(1.05);
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:#fff;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 </style>
 </head>
@@ -199,121 +78,79 @@ footer{
 <body>
 
 <nav>
-  <div><strong>Muhamad Wahid</strong></div>
-  <div>
-    <a href="#about">Tentang</a>
-    <a href="#services">Layanan</a>
-    <a href="#pricing">Harga</a>
-    <a href="#contact">Kontak</a>
-  </div>
+<div><strong>Muhamad Wahid</strong></div>
+<div>
+<a href="#services">Layanan</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Kontak</a>
+</div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
-  <h1>Halo, Saya <span>Muhamad Wahid</span></h1>
-  <p>Freelance Web Developer yang membantu UMKM & bisnis online memiliki website modern untuk meningkatkan penjualan.</p>
-  <a href="https://wa.me/6287847053105?text=Halo%20saya%20ingin%20buat%20website" 
-     target="_blank" 
-     class="btn">
-     Mulai Sekarang
-  </a>
+<h1>Saya <span>Muhamad Wahid</span></h1>
+<p>Web Developer untuk UMKM & bisnis lokal.</p>
+<a href="https://wa.me/6287847053105?text=Halo%20saya%20ingin%20buat%20website" class="btn" target="_blank">
+Konsultasi WhatsApp
+</a>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
-  <h2 class="section-title">Tentang Saya</h2>
-  <p class="section-sub">Saya fokus membuat landing page cepat, elegan, dan siap meningkatkan konversi bisnis Anda.</p>
-</section>
-
-<!-- SERVICES -->
 <section id="services">
-  <h2 class="section-title">Layanan</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Landing Page</h3>
-      <p>Website 1 halaman fokus konversi & penjualan.</p>
-    </div>
-    <div class="card">
-      <h3>Website UMKM</h3>
-      <p>Website bisnis lengkap dengan integrasi WhatsApp.</p>
-    </div>
-    <div class="card">
-      <h3>Maintenance</h3>
-      <p>Perawatan & update website berkala.</p>
-    </div>
-  </div>
+<h2>Layanan</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Landing Page</h3>
+<p>Website 1 halaman fokus konversi.</p>
+<a href="https://wa.me/6287847053105?text=Halo%20saya%20ingin%20Landing%20Page" class="btn" target="_blank">Pesan Sekarang</a>
+</div>
+
+<div class="card">
+<h3>Website UMKM</h3>
+<p>Company profile profesional.</p>
+<a href="https://wa.me/6287847053105?text=Halo%20saya%20ingin%20Website%20UMKM" class="btn" target="_blank">Pesan Sekarang</a>
+</div>
+
+<div class="card">
+<h3>Maintenance</h3>
+<p>Perawatan & update website.</p>
+<a href="https://wa.me/6287847053105?text=Halo%20saya%20ingin%20Maintenance%20Website" class="btn" target="_blank">Pesan Sekarang</a>
+</div>
+
+</div>
 </section>
 
-<!-- PRICING -->
-<section id="pricing">
-  <h2 class="section-title">Paket Harga</h2>
-  <p class="section-sub">Investasi terbaik untuk bisnis Anda</p>
+<section id="portfolio">
+<h2>Contoh Project</h2>
+<div class="grid">
 
-  <div class="grid">
+<div class="card">
+<h3>Service AC</h3>
+<p>Website jasa service AC profesional.</p>
+<a href="service-ac/" class="btn" target="_blank">Lihat Demo</a>
+</div>
 
-    <div class="card">
-      <h3>Basic</h3>
-      <p class="price">Rp 400.000</p>
-      <ul>
-        <li>1 Halaman</li>
-        <li>Responsive</li>
-        <li>Tombol WhatsApp</li>
-        <li>2x Revisi</li>
-      </ul>
-      <a href="https://wa.me/6287847053105?text=Halo%20saya%20tertarik%20paket%20Basic" target="_blank" class="btn">Pesan</a>
-    </div>
+<div class="card">
+<h3>Cuci Mobil</h3>
+<p>Website jasa cuci mobil modern.</p>
+<a href="cuci-mobil/" class="btn" target="_blank">Lihat Demo</a>
+</div>
 
-    <div class="card recommended">
-      <div class="badge">Paling Laris</div>
-      <h3>Pro</h3>
-      <p class="price">Rp 750.000</p>
-      <ul>
-        <li>Semua Basic</li>
-        <li>Desain Premium</li>
-        <li>Form Kontak</li>
-        <li>SEO Dasar</li>
-      </ul>
-      <a href="https://wa.me/6287847053105?text=Halo%20saya%20tertarik%20paket%20Pro" target="_blank" class="btn">Pesan</a>
-    </div>
+<div class="card">
+<h3>Catering</h3>
+<p>Website promosi catering & paket makanan.</p>
+<a href="catering/" class="btn" target="_blank">Lihat Demo</a>
+</div>
 
-    <div class="card">
-      <h3>Business</h3>
-      <p class="price">Rp 1.200.000</p>
-      <ul>
-        <li>Semua Pro</li>
-        <li>Optimasi Speed</li>
-        <li>Analytics</li>
-        <li>Prioritas Support</li>
-      </ul>
-      <a href="https://wa.me/6287847053105?text=Halo%20saya%20tertarik%20paket%20Business" target="_blank" class="btn">Pesan</a>
-    </div>
-
-  </div>
-</section>
-
-<!-- TESTIMONI -->
-<section class="testimoni">
-  <h2 class="section-title">Testimoni</h2>
-  <div class="grid">
-    <div class="card">
-      <p>"Website saya jadi lebih profesional dan penjualan naik!"</p>
-      <strong>- Owner UMKM</strong>
-    </div>
-    <div class="card">
-      <p>"Desain modern dan cepat selesai."</p>
-      <strong>- Bisnis Online</strong>
-    </div>
-  </div>
+</div>
 </section>
 
 <footer id="contact">
-  © 2026 Muhamad Wahid | Freelance Web Developer
+© 2026 Muhamad Wahid | Freelance Web Developer
 </footer>
 
-<a href="https://wa.me/6287847053105?text=Halo%20saya%20ingin%20konsultasi" 
-   target="_blank" 
-   class="wa-float">
-   Chat WhatsApp
+<a href="https://wa.me/6287847053105?text=Halo%20saya%20tertarik%20dengan%20jasa%20website" 
+class="wa-float" target="_blank">
+Chat WA
 </a>
 
 </body>
